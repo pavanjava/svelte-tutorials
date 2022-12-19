@@ -1,9 +1,11 @@
 <script>
-	const name = "Sevlte world"
+	const name = "Sevlte world";
+	const channel = "<b>svelte-dev-ninja</b>";
 </script>
 
 <main>
 	<h1>Hello {name} !</h1>
+	<h4>{@html channel}</h4>
 </main>
 
 <style>
