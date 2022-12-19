@@ -2,11 +2,13 @@
 	const name = "Dynamic binding demonstration";
 	const channel = "<b>svelte-dev-ninja</b>";
 	const class_name = "heading"
+	const disabled = "disabled"
 </script>
 
 <main>
 	<h1 class="{class_name}">{name} !</h1>
 	<h4>{@html channel}</h4>
+	<button {disabled}>Bind</button>
 </main>
 
 <style>
