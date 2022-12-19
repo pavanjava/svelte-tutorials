@@ -1,14 +1,22 @@
 <script>
-	const name = "Sevlte world";
+	const name = "Dynamic binding demonstration";
 	const channel = "<b>svelte-dev-ninja</b>";
+	const class_name = "heading"
 </script>
 
 <main>
-	<h1>Hello {name} !</h1>
+	<h1 class="{class_name}">{name} !</h1>
 	<h4>{@html channel}</h4>
 </main>
 
 <style>
+	.heading {
+		color: #ff3e00;
+		text-decoration: solid;
+		font-weight: 500;
+		font-style: italic;
+	}
+
 	main {
 		text-align: center;
 		padding: 1em;
